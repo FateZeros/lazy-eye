@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import { observer } from 'mobx-react'
 
-import './App.css'
+import './Engine.css'
 
-@observer
-class App extends Component {
+class Engine extends Component {
   render() {
     return (
       <div className="App">
@@ -14,4 +12,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default Engine
