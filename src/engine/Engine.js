@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import './Engine.css'
+import styles from './Engine.module.less'
 
 class Engine extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">React</header>
+      <div className={styles.App}>
+        <header>React</header>
       </div>
     )
   }

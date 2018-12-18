@@ -1,5 +1,9 @@
 # Lasy
 
+```bash
+webpack 4.0 +
+```
+
 ## Mobx
 
 [Mobx 中文](https://cn.mobx.js.org)
@@ -14,6 +18,14 @@ npm install --save mobx-react
 
 ```bash
 npm install --save-dev @babel/plugin-proposal-decorators
+```
+
+## 使用 less
+
+```bash
+npm install less --save
+
+npm install less-loader --save
 ```
 
 [Mobx decorators](https://babeljs.io/docs/en/babel-plugin-proposal-decorators)
