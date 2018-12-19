@@ -1,5 +1,5 @@
-import engineStore from './modules/engineStore'
+import engineModel from './modules/engine.model'
 
 export default {
-  engineStore
+  engineModel
 }

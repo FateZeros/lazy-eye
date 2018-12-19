@@ -20,6 +20,12 @@ npm install --save mobx-react
 npm install --save-dev @babel/plugin-proposal-decorators
 ```
 
+## 使用 React-router
+
+```bash
+ npm install --save react-router-dom
+```
+
 ## 使用 less
 
 ```bash

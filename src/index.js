@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'mobx-react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import Engine from './engine'
 import stores from './stores'
@@ -10,7 +11,9 @@ import './assets/styles/index.module.less'
 
 ReactDOM.render(
   <Provider {...stores}>
-    <Engine />
+    <Router>
+      <Engine />
+    </Router>
   </Provider>,
   document.getElementById('root')
 )

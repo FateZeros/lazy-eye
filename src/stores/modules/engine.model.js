@@ -1,6 +1,6 @@
 import { observable, action } from 'mobx'
 
-class EngineStore {
+class EngineModel {
   @observable num = 1
 
   @action
@@ -8,6 +8,6 @@ class EngineStore {
     this.num += 1
   }
 }
-const engineStore = new EngineStore()
+const engineModel = new EngineModel()
 
-export default engineStore
+export default engineModel
