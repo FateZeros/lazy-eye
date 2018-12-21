@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { observer, inject } from 'mobx-react'
 import { when } from 'mobx'
 import PropTypes from 'prop-types'
+import { Button } from 'antd'
 
 import styles from './Engine.module.less'
 
@@ -43,7 +44,9 @@ class Engine extends Component {
         {num}
         <header>React</header>
         {this.state.test}
-        <button onClick={this.handleClick}>click</button>
+        <Button onClick={this.handleClick} type="primary">
+          click
+        </Button>
       </div>
     )
   }
