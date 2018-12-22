@@ -1,7 +1,9 @@
-# Lasy
+# Lazy
 
 ```bash
 webpack 4.0 +
+
+mobx 5.7.0 +
 ```
 
 ## Mobx
