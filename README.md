@@ -60,4 +60,12 @@ babel: {
 }
 ```
 
-[Mobx decorators](https://babeljs.io/docs/en/babel-plugin-proposal-decorators)
+## 使用 electron
+electron 构建跨平台的桌面应用
+
+```bash
+npm install -save electron
+```
+
+[Mobx decorators](https://babeljs.io/docs/en/babel-plugin-proposal-decorators) </br>
+[Electron](https://electronjs.org/) </br>
