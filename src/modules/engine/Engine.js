@@ -5,10 +5,11 @@ import PropTypes from 'prop-types'
 import { Layout, Button } from 'antd'
 
 import Header from 'src/components/header'
+import MenuSider from 'src/components/menuSider'
 
 import styles from './Engine.module.less'
 
-const { Content, Footer } = Layout
+const { Content, Footer, Sider } = Layout
 
 @inject('engineModel')
 @observer
@@ -45,14 +46,20 @@ class Engine extends Component {
     console.log(num, 1212)
 
     return (
-      <Layout>
+      <Layout style={{ height: '100%' }}>
         <Header />
-        <Content />
-        {num}
-        {this.state.test}
-        <Button onClick={this.handleClick} type="primary">
-          click
-        </Button>
+        <Layout>
+          <Sider width={200} style={{ background: '#e6e6e6' }}>
+            <MenuSider />
+          </Sider>
+          <Content>
+            {num}
+            {this.state.test}
+            <Button onClick={this.handleClick} type="primary">
+              click
+            </Button>
+          </Content>
+        </Layout>
         <Footer className={styles['text-center']}>
           websit ©2018 Created by Lazy Eye
         </Footer>

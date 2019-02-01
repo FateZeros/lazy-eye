@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { LocaleProvider } from 'antd'
 import zhCN from 'antd/lib/locale-provider/zh_CN'
 
-import Engine from './engine'
+import Engine from './modules/engine'
 import stores from './stores'
 import * as serviceWorker from './serviceWorker'
 

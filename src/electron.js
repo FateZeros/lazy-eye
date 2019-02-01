@@ -1,11 +1,29 @@
 const { app, BrowserWindow } = require('electron')
-const path = require('path')
-const url = require('url')
+// const path = require('path')
+// const url = require('url')
 
 let mainWindow
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 })
+  // console.log(__dirname, 111)
+  mainWindow = new BrowserWindow({
+    title: 'FateMusic',
+    skipTaskbar: true,
+
+    icons: __dirname + '/assets/images/netMusic.ico',
+
+    // 1000 * 672
+    width: 1400,
+    height: 672,
+
+    webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: true,
+      webSecurity: true,
+      allowRunningInsecureContent: false,
+      preload: './preload.js'
+    }
+  })
 
   // 加载应用
   mainWindow.loadURL('http://localhost:1030/')

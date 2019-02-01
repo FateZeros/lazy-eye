@@ -65,6 +65,10 @@ electron 构建跨平台的桌面应用
 
 ```bash
 npm install -save electron
+
+npm run electron-start
+
+npm install -g electron
 ```
 
 [Mobx decorators](https://babeljs.io/docs/en/babel-plugin-proposal-decorators) </br>
